@@ -109,7 +109,6 @@ for job in dummy_jobs:
 st.subheader("📋 Results")
 if filtered_jobs:
     for job in filtered_jobs:
-        st.markdown(f"**{job['title']}** at **{job['company']}** – {job['location']}  
-[Apply Here]({job['apply']})")
+        st.markdown(f"**{job['title']}** at **{job['company']}** – {job['location']}  \n[Apply Here]({job['apply']})")
 else:
     st.info("No jobs matched. Try changing search or location.")
